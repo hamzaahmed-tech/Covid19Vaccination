@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    --pry_color :rgb(9, 123, 189);
+}
+html{
+    font-size: 65.5%;
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 7rem;
+}
+header h2{
+    margin-top: -2rem;
+    font-size: 3rem;
+    color: gray;
+}
+header span{
+    color: var(--pry_color);
+    font-size: 3.5rem;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(240, 240, 240, 0.897);
+}
+input{
+    outline: none;
+}
+input::-webkit-inner-spin-button{
+    display: none;
+}
+input::-webkit-outer-spin-button{
+    display: none;
+}
+.notification{
+    margin-top: 2rem;
+    background-color: rgb(251, 251, 252);
+    max-width:70vw;
+    width: 100%;
+    min-height: 50rem;
+    border-radius: .6rem;
+    padding: 2rem;
+    
+}
+.not_inline{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-items: center;
+}
+.cross_icon i{
+    font-size: 1.7rem;
+    color: grey;
+    cursor: pointer;
+}
+.message h2{
+font-size: 1.6rem;
+text-transform: lowercase;
+
+}
+.success h2{
+    color: rgb(31, 190, 84) ;
+}
+.danger h2{
+    color: rgb(223, 47, 24) ;
+}
+.message p{
+    font-weight: 500;
+    letter-spacing: .01rem;
+    font-size: 1.1rem;
+    color: rgb(85, 85, 85);
+    text-transform: capitalize !important;
+}
+
+ .row{
+    display: flex;
+    flex-direction: column;
+}
+.row_left h3,.row_right h3{
+    font-size: 1.2rem !important;
+    color: rgb(54, 54, 54);
+    
+    text-transform: uppercase;
+}
+ .row input{
+    width: 100%;
+    height: 3.8rem;
+    margin: 1rem 0;
+    border-radius: .3rem;
+    background-color: transparent;
+    /* box-shadow:  0 0  .5rem rgba(129, 129, 129, 0.315); */
+    padding: .5rem;
+    border: 1px solid #0000002c;
+    color: var(--pry_color);
+    transition:all .1s linear;
+}
+
+ .row input:focus{
+    border: none;
+    border-radius: 0;
+    border-bottom: 2px solid  var(--pry_color);
+}
+.skill_input {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #0000002c;
+    margin: 1rem 0;
+    height: 3.8rem;
+    border-radius: .3rem;
+    padding: 0 1rem;
+}
+.skill{
+    display: flex;
+    align-items: center;
+}
+.skill input{
+    max-width: 1.2rem;
+    max-height: 1.2rem;
+}
+.skill input:checked{
+   background-color: red;
+}
+.password_field{
+    position: relative;
+}
+.password_field i{
+    position: absolute;
+    right: 1.4rem;
+    top: 55%;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: gray;
+}
+.eye_show{
+    display: none !important;
+}
+.eye_slash_hide{
+    display: none !important;
+}
+/* .skill_left h3{
+    margin-bottom: 1rem;
+} */
+.skill h3{
+    margin-right: 0.5rem;
+}
+.about_us textarea{
+    max-width: 100%;
+    width: 100%;
+    height: 3.8rem;
+    margin: 1rem 0;
+    border-radius: .3rem;
+    background-color: transparent;
+    /* box-shadow:  0 0  .5rem rgba(129, 129, 129, 0.315); */
+    padding: .5rem;
+    border: 1px solid #0000002c;
+    color: var(--pry_color);
+    transition:all .1s linear;
+    outline: none;
+    overflow: hidden;
+    resize: vertical;
+    height: 17rem;
+}
+.about_us{
+    grid-column-start: -1;
+    grid-column-end: 3;
+}
+
+.btn{
+    display: flex;
+    justify-content: flex-start;
+    height: 5rem;
+    width: 100%;
+    align-items: center;
+ 
+}
+ .Submit_btn{
+    background-color: var(--pry_color);
+    color: white;
+    border: none;
+    padding: .5rem 2rem;
+    border-radius: 2rem;
+    font-size: 1.3rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    position: relative;
+transition: .1s linear;
+}
+.Submit_btn i{
+    position: absolute;
+    font-size: 1.2rem;
+    opacity: 0;
+    right: 2rem;
+    transition: .2s linear;
+
+}
+.Submit_btn:hover{
+    padding-right: 3rem;
+    background-color: transparent !important;
+    color: black;
+    border: 1px solid #0000001c;
+}
+.Submit_btn:hover i{
+    opacity: 1;
+    transform: translateX(58%);
+    color: rgb(31, 190, 84) !important;
+}
+.updateInfo{
+    margin-top: 2rem;
+}
